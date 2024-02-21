@@ -1,8 +1,8 @@
-export default function CustominputLabel(props){
+export default function CustomTextAreaLabel(props){
     return(
         <div className={`col-${props.col} mb-3`}>
           <label className="form-label" htmlfor={props.id}>{props.texto}</label>
-          <input className="form-control" id={props.id} type="text" />
+          <textarea className="form-control" id={props.id} rows="3" />
         </div>
     )
 }
